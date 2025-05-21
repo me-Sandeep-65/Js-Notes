@@ -35,6 +35,24 @@ const chai =  () => {
 
 // chai()
 
+
+
+//________________________________________________________________________________________________________________________________________________________
+/*
+    Arrow functions don’t have their own this.
+    
+    Instead, they capture the this from the lexical (surrounding) scope at the time they are defined.
+    
+    So:
+    In the browser, the surrounding scope is the global scope, and this refers to the window object.
+    
+    In Node.js (outside of a function or module), the outer scope is a module, and this is {}.
+
+*/
+//________________________________________________________________________________________________________________________________________________________
+
+
+
 // const addTwo = (num1, num2) => {
 //     return num1 + num2
 // }
